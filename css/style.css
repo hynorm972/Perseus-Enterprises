@@ -179,6 +179,7 @@
     .page-header {
         margin-top: -34px;
     }
+    
 }
 
 .carousel-caption {
@@ -584,84 +585,93 @@ h2 span {
     color: #4c3fc6; /* Green color for emphasis */
 }
 
+/* styles.css */
+.why-labguard {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.why-labguard h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.why-labguard h2 span {
+    color: #8bc34a; /* Use your desired color */
+}
+
 .features {
     display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.feature1 {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.feature {
+    max-width: 200px;
+    margin: 20px;
     text-align: center;
-    max-width: 200px; /* Ensure items are not too wide */
 }
 
-.feature1 .icon {
-    margin-bottom: 15px;
+.feature img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
 }
 
-.feature1 .icon img {
-    width: 50px;
-    height: 50px;
+.feature p {
+    font-size: 1.5rem;
+    color: #333;
 }
 
-.feature1 p {
-    margin: 0;
-    font-size: 1em;
+.feature p span {
+    color: #8bc34a; /* Use your desired color */
 }
 
-.feature1 span {
-    color: #4c3fc6; /* Green color for emphasis */
+.clients {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #8bc34a; /* Adjust to your desired color */
+    color: white;
+    margin-bottom: 20px;
+}
+
+.clients h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.clients h2 span {
     font-weight: bold;
 }
 
-.clients-section {
-    width: 90%;
-    max-width: 1200px;
-    text-align: center;
-    background-color: #3fc1c6; /* Background color for the clients section */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Prevent overflow */
-    margin-left: 100px; /* Optional margin for spacing */
-    margin-top: 50px;
-    margin-bottom: 100px;
+.swiper-container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-.clients-container {
-    position: relative;
+.swiper-slide {
     display: flex;
+    justify-content: center;
     align-items: center;
-    overflow: hidden;
-    margin: 20px 0;
-    padding: 0 20px; /* Add padding to avoid button overlapping */
-}
-
-.clients-slider {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-}
-
-.client {
-    flex: 0 0 auto;
-    margin: 0 15px; /* Spacing between client logos */
-    padding: 10px;
-    background-color: white; /* White background for each client box */
-    border: 1px solid #ddd; /* Border for each client box */
-    border-radius: 8px; /* Rounded corners for each client box */
+    background-color: white;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
 }
 
-.client img {
+.swiper-slide img {
     max-width: 150px;
     max-height: 100px;
     display: block;
     margin: 0 auto; /* Center the logo within the box */
+}
+
+.view-all {
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    text-decoration: underline;
 }
 
 button1 {
@@ -699,3 +709,81 @@ button1 {
     text-decoration: underline;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.product-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-section h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.product-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    flex: 1 1 500px; /* Allow the cards to resize based on available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 400px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+.details-btn {
+    background-color: #78c850;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+    background-color: #5a9e38;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
