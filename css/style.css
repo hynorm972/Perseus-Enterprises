@@ -646,8 +646,15 @@ h2 span {
 }
 
 .swiper-container {
-    width: 80%;
+    width: calc(100% - 40px); /* Reduced width to add padding */
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px; /* Add padding to the left and right */
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .swiper-slide {
@@ -658,13 +665,17 @@ h2 span {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
+    width: 200px; /* Fixed width for all slides */
+    height: 150px; /* Fixed height for all slides */
+    margin: 0 10px; /* Add margin to create space between slides */
 }
 
 .swiper-slide img {
-    max-width: 150px;
-    max-height: 100px;
+    width: 150px;
+    height: 100px;
     display: block;
     margin: 0 auto; /* Center the logo within the box */
+    object-fit: contain;
 }
 
 .view-all {
