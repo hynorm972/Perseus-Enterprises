@@ -1,39 +1,26 @@
+//Contact Form in PHP
 <?php
+  $name = htmlspecialchars($_POST['name']);
+  $email = htmlspecialchars($_POST['email']);
+  $phone = htmlspecialchars($_POST['phone']);
+  $website = htmlspecialchars($_POST['website']);
+  $message = htmlspecialchars($_POST['message']);
 
-    $UserName=$_POST['UName'];
-    $Email=$_POST['Email'];
-    $Contact_number=$_POST['Contact number'];
-    $City=$_POST['City'];
-    $Msg=$_POST['msg'];
-    $mailheader = "From:".$name."<".$email.">\r\n";
-    $recipient="krishnaiyer46732@gmail.com";
-    mail($recipient,$Email,$Contact_number,$Msg)
-    or die("Error!");
-
-echo'
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact form</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Thank you for contacting me. I will get back to you as soon as possible!</h1>
-        <p class="back">Go back to the <a href="index.html">homepage</a>.</p>
-        
-    </div>
-</body>
-</html>
-
-
-
-';
-
-
+  if(!empty($email) && !empty($message)){
+    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+      $receiver = "krishnaiyer46732@gmail.com"; //enter that email address where you want to receive all messages
+      $subject = "From: $name <$email>";
+      $body = "Name: $name\nEmail: $email\nPhone: $phone\nWebsite: $website\n\nMessage:\n$message\n\nRegards,\n$name";
+      $sender = "From: $email";
+      if(mail($receiver, $subject, $body, $sender)){
+         echo "Your message has been sent";
+      }else{
+         echo "Sorry, failed to send your message!";
+      }
+    }else{
+      echo "Enter a valid email address!";
+    }
+  }else{
+    echo "Email and message field is required!";
+  }
 ?>
