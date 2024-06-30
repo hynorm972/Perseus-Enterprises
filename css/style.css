@@ -169,6 +169,7 @@
         height: auto;
         top: 50%;
         left: 50%;
+        font-size: 2rem;
     }
     .navbar .nav-item:hover .dropdown-menu {
         top: 100%;
