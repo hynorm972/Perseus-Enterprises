@@ -169,7 +169,6 @@
         height: auto;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
     }
     .navbar .nav-item:hover .dropdown-menu {
         top: 100%;
