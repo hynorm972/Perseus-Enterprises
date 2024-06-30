@@ -165,7 +165,7 @@
     }
     .header-carousel{
         object-fit: cover;
-        width: 25%;
+        width: 100%;
         height: auto;
         position: absolute;
         padding: 0.5rem;
