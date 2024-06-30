@@ -165,8 +165,9 @@
     }
     .header-carousel{
         object-fit: cover;
-        width: auto;
+        width: 25%;
         height: auto;
+        float: center;
     }
     .navbar .nav-item:hover .dropdown-menu {
         top: 100%;
@@ -659,6 +660,7 @@ h2 span {
 .swiper-wrapper {
     display: flex;
     align-items: center;
+    flex: 1 0 calc(33.333% - 20px);
 }
 
 .swiper-slide {
