@@ -167,7 +167,10 @@
         object-fit: cover;
         width: 25%;
         height: auto;
-        float: center;
+        position: absolute;
+        padding: 0.5rem;
+        text-align: center;
+        font-size: 20px;
     }
     .navbar .nav-item:hover .dropdown-menu {
         top: 100%;
