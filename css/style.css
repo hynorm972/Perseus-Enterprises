@@ -109,6 +109,10 @@
     top: -100px;
     transition: .5s;
 }
+.navbar-brand h1{
+    font-size: em;
+    margin: 20px auto;
+}
 
 .navbar .navbar-nav .nav-link {
     margin-right: 35px;
