@@ -169,43 +169,34 @@
          </div>
          <div class="container">
          <div class="wrapper">
-    <header>Send us a Message</header>
-    <form action="#">
-      <div class="dbl-field">
-        <div class="field">
-          <input type="text" name="name" placeholder="Enter your name">
-          <i class='fas fa-user'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="email" placeholder="Enter your email">
-          <i class='fas fa-envelope'></i>
-        </div>
-      </div>
-      <div class="dbl-field">
-        <div class="field">
-          <input type="text" name="phone" placeholder="Enter your phone">
-          <i class='fas fa-phone-alt'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="website" placeholder="Enter your website">
-          <i class='fas fa-globe'></i>
-        </div>
-      </div>
-      <div class="message">
-        <textarea placeholder="Write your message" name="message"></textarea>
-        <i class="material-icons">message</i>
-      </div>
-      <div class="button-area">
-        <button type="submit">Send Message</button>
-        <span></span>
-      </div>
-    </form>
-  </div>
+<!-- 
+    This is a working contact form. To receive email, 
+    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
 
+    Create Access Key here 👉 https://web3forms.com/
+ -->
+
+ <div class="contact-container">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-title">
+            <h2>Get in Touch</h2>
+            <hr>
+        </div>
+        <input type="hidden" name="access_key" value="faaaf11c-0a87-41f5-b280-6f071169a693">
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="conact-right">
+        <img src="img1/right_img.png" alt="">
     </div>
+</div>
     <!-- Contact End -->
 
     <script src="script.js"></script>
+
+
     <!-- Footer Start -->
     <div class="container-fluid footer position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
