@@ -62,7 +62,7 @@
                     <i class="bi bi-telephone-inbound fs-2"></i>
                     <div class="ms-3">
                         <h5 class="text-white mb-0">Call Now</h5>
-                        <span>+012 345 6789</span>
+                        <span>+919820084573</span>
                     </div>
                 </div>
                 <a href="index.html" class="navbar-brand">
@@ -73,7 +73,8 @@
                     <i class="bi bi-envelope fs-2"></i>
                     <div class="ms-3">
                         <h5 class="text-white mb-0">Mail Now</h5>
-                        <span>info@example.com</span>
+                        <div>perseus.ent@gmail.com</div>
+                        <div>rajnish@perseus.co.in</div>
                     </div>
                 </div>
             </div>
@@ -140,7 +141,6 @@
         <div class="container py-5">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h1 class="display-6 mb-3">Have Any Query? Feel Free To Contact Us</h1>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor.</p>
             </div>
             <div class="row contact-info position-relative g-0 mb-5">
                 <div class="col-lg-6">
@@ -150,7 +150,9 @@
                         </div>
                         <div class="ms-3">
                             <h5 class="text-white">Call Us</h5>
-                            <h2 class="text-white mb-0">+012 345 67890</h2>
+                            <h2 class="text-white mb-0">+919820084573</h2>
+                            <h2 class="text-white mb-0"></h2>
+                            <h2></h2>
                         </div>
                     </a>
                 </div>
@@ -161,7 +163,8 @@
                         </div>
                         <div class="ms-3">
                             <h5 class="text-white">Mail Us</h5>
-                            <h2 class="text-white mb-0">info@example.com</h2>
+                            <h2 class="text-white mb-0">perseus.ent@gmail.com</h2> 
+                            <h2 class="text-white mb-0">rajnish@perseus.co.in</h2>
                         </div>
                     </a>
                 </div>
@@ -169,6 +172,7 @@
          </div>
          <div class="container">
          <div class="wrapper">
+
 <!-- 
     This is a working contact form. To receive email, 
     Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
@@ -176,22 +180,43 @@
     Create Access Key here 👉 https://web3forms.com/
  -->
 
- <div class="contact-container">
-    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-        <div class="contact-left-title">
-            <h2>Get in Touch</h2>
-            <hr>
-        </div>
-        <input type="hidden" name="access_key" value="faaaf11c-0a87-41f5-b280-6f071169a693">
-        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-        <button type="submit">Submit</button>
-    </form>
-    <div class="conact-right">
-        <img src="img1/right_img.png" alt="">
+ <section class="contact-section">
+    <div class="contact-intro">
+      <h2 class="contact-title">Get in Touch</h2>
+      <p class="contact-description">
+        Fill out the form below and we'll get back to you as soon as possible.
+      </p>
     </div>
-</div>
+  
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+  
+      <input type="hidden" name="access_key" value="faaaf11c-0a87-41f5-b280-6f071169a693" />
+      <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+      <input type="hidden" name="from_name" value="My Website" />
+      <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+  
+      <div class="form-group-container">
+        <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+        </div>
+        <div class="form-group">
+          <label for="phone" class="form-label">Phone</label>
+          <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+        </div>
+      </div>
+      <button class="form-submit" type="submit">Send Message</button>
+    </form>
+  
+  </section>
     <!-- Contact End -->
 
     <script src="script.js"></script>
