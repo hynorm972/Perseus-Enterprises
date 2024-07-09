@@ -559,6 +559,7 @@
 
 .container {
     text-align: center;
+
 }
 
 h2 {
@@ -857,4 +858,18 @@ body {
     padding: 13px 5px;
     border-radius: 0.375rem;
   }
-  
+
+.container1 h1 {
+    font-size: 2em;
+    color: #041b33;
+    margin-bottom: 20px;
+}
+.container1 p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-style:italic;
+    color: #007bff;
+}
+.container1 p:last-of-type {
+    font-weight: bold;
+}
